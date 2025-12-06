@@ -1,0 +1,162 @@
+/* tag selector it use any tag we can use */
+/* Select elements and apply styles */
+* {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 20px;
+}
+
+p {
+  color: green;
+  text-align: center;
+}
+
+/* Nested Selecter */
+.parent {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+  background-color: lightgray;
+
+  .child-1 {
+    color: blue;
+  }
+
+  .child-2 {
+    font-size: 18px;
+  }
+
+  .child-3 {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* class selector */
+*/ .lorem {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* id selector */
+#primary {
+  background-color: brown;
+  color: white;
+  border-radius: 10px;
+}
+
+a {
+  color: blue;
+}
+
+/* Links that start with "#" */
+a[href^="#"] {
+  background-color: #ffff;
+}
+
+/* Links with "example" anywhere in the URL */
+a[href*="example"] {
+  color: black;
+  background-color: #ffff;
+}
+
+a[href$="org"] {
+  color: white;
+  background-color: #0000ff;
+}
+
+/* ^= → starts with
+$= → ends with
+= → exact match */
+/* Attribute selector */
+
+a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* Grouping selector */
+/* h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+  color: purple !important;
+} */
+/* nested selector */
+.parentRule {
+  background-color: blanchedalmond;
+
+  & .childRule {
+    color: saddlebrown;
+  }
+
+  & .hover {
+    color: red;
+  }
+}
+
+.parentRule {
+  background-color: blanchedalmond;
+}
+
+.parentRule .childRule {
+  color: rgb(0, 0, 0);
+}
+
+.parentRule .hover {
+  color: red !important;
+}
+
+/* Selector list */
+h1,
+h2,
+div,
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: teal;
+  font-weight: normal;
+}
+
+/* box model */
+.boxmodel {
+  width: 300px;
+  border: 2px solid black;
+  padding: 30px;
+  margin: 30px;
+  background-color: rgb(171, 210, 223);
+  color: #881a1a;
+}
+
+.boxmodel img {
+  width: 100%;
+  height: auto;
+}
+
+/* child combinator  */
+.boxmodel>div {
+  border: 2px solid red;
+  color: #f0eaea;
+  padding: 20px;
+}
+
+.box-3 {
+  width: 400px;
+  height: 200px;
+  border: 5px solid blue;
+  padding: 20px 20px 20px 20px;
+  margin: 40px auto 20px;
+  background-color: rgb(141, 130, 151);
+}
+
+/* Subsequent-sibling combinator */
+.foo p~span {
+  color: blue;
+}
+
+.foo p~.foo span {
+  color: green;
+}
