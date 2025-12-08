@@ -1,5 +1,3 @@
-/* tag selector it use any tag we can use */
-/* Select elements and apply styles */
 * {
   box-sizing: border-box;
   padding: 5px;
@@ -11,7 +9,7 @@ p {
   text-align: center;
 }
 
-/* Nested Selecter */
+
 .parent {
   border: 2px solid black;
   padding: 20px;
@@ -36,14 +34,14 @@ p {
   }
 }
 
-/* class selector */
-*/ .lorem {
+
+.lorem {
   color: red;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* id selector */
+
 #primary {
   background-color: brown;
   color: white;
@@ -54,12 +52,10 @@ a {
   color: blue;
 }
 
-/* Links that start with "#" */
 a[href^="#"] {
   background-color: #ffff;
 }
 
-/* Links with "example" anywhere in the URL */
 a[href*="example"] {
   color: black;
   background-color: #ffff;
@@ -70,59 +66,27 @@ a[href$="org"] {
   background-color: #0000ff;
 }
 
-/* ^= → starts with
-$= → ends with
-= → exact match */
-/* Attribute selector */
-
 a[target="_blank"] {
   font-weight: bold;
 }
 
-/* Grouping selector */
-/* h1,
-h2,
-h3 {
-  font-family: Arial, sans-serif;
-  color: purple !important;
-} */
-/* nested selector */
 .parentRule {
   background-color: blanchedalmond;
 
   & .childRule {
-    color: saddlebrown;
-  }
-
-  & .hover {
-    color: red;
+    color: rgb(26, 9, 126);
   }
 }
 
-.parentRule {
-  background-color: blanchedalmond;
-}
-
-.parentRule .childRule {
-  color: rgb(0, 0, 0);
-}
-
-.parentRule .hover {
-  color: red !important;
-}
-
-/* Selector list */
 h1,
 h2,
 div,
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  src: url("../font/SegoeUIVF.ttf");
   color: teal;
   font-weight: normal;
 }
 
-/* box model */
 .boxmodel {
   width: 300px;
   border: 2px solid black;
@@ -137,7 +101,6 @@ p {
   height: auto;
 }
 
-/* child combinator  */
 .boxmodel>div {
   border: 2px solid red;
   color: #f0eaea;
@@ -153,7 +116,6 @@ p {
   background-color: rgb(141, 130, 151);
 }
 
-/* Subsequent-sibling combinator */
 .foo p~span {
   color: blue;
 }

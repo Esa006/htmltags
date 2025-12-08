@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%;
+    height: 300px;
+    opacity: 0.8;
+
+}
+
+input {
+    accent-color: auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+input.custom {
+    accent-color: rebeccapurple;
+}
+
+input[type="radio"].custom,
+.radio.custom,
+.radio {
+    accent-color: orange;
+}
+
+input[type=""].custom,
+.radio.custom,
+.radio {
+    accent-color: orange;
+}
+
+input[type="radio"].custom,
+.radio.custom,
+.radio {
+    accent-color: orange;
+}
+
+input[type="range"].custom,
+.range.custom,
+.range {
+    accent-color: rgb(110, 7, 33);
+}
+
+.selection-demo {
+    border: solid 1.5px tomato;
+    height: 300px;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-content: center;
+}
+
+.olive {
+    background-color: olive;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.deepskyblue {
+    background-color: deepskyblue;
+}
+
+.orchid {
+    background-color: orchid;
+}
+
+.slateblue {
+    background-color: slateblue;
+    color: white;
+}
+
+.maroon {
+    background-color: maroon;
+    color: white;
+}
+
+.selection-1 {
+    border: solid 1.5px #ff6347;
+    height: 300px;
+    width: 300px;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+.olives {
+    background-color: olive;
+}
+
+.corals {
+    background-color: coral;
+}
+
+.deepskyblues {
+    background-color: deepskyblue;
+}
+
+.orchids {
+    background-color: orchid;
+}
+
+.slateblues {
+    background-color: slateblue;
+    color: white;
+}
+
+.maroons {
+    background-color: maroon;
+    color: white;
+}
+
+.card .container #demo {
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.card .container {
+    border: 2px solid #0f0f0f;
+    padding: 0px 0px;
+    width: 200px;
+    height: 250px;
+}
+
+.card .container h4,
+p {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.align-self {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background: beige;
+}
+
+.align-self div {
+    height: 60px;
+    background: cyan;
+    margin: 5px;
+}
+
+.align-self div:nth-child(3) {
+    align-self: flex-end;
+    background: pink;
+}
+
+.align-self-1 {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.align-self-1 div {
+    height: 60px;
+    background: cyan;
+    margin: 5px;
+}
+
+.align-self-1 div:nth-child(3) {
+    align-self: flex-start;
+    background: pink;
+}
+
+.align-self-2 {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: beige;
+}
+
+.align-self-2 div {
+    height: 60px;
+    background: cyan;
+    margin: 5px;
+}
+
+.align-self-2 div:nth-child(3) {
+    align-self: center;
+}
+
+.initial-box {
+    color: red;
+    font-size: 30px;
+    background: yellow;
+}
+
+.parent {
+    color: green;
+    font-size: 25px;
+}
+
+.child {
+    color: inherit;
+    font-size: inherit;
+}
+
+.parent-1 {
+    color: blue;
+    font-size: 22px;
+}
+
+.parent-1.child-1 {
+    color: inherit;
+    font-size: inherit;
+}
+
+button {
+    color: black !important;
+}
+
+button.revert {
+    color: red !important;
+    color: revert;
+}
+
+.unset-parent {
+    color: blue;
+    background: yellow;
+}
+
+.unset-child {
+    color: unset;
+    background: unset;
+}
+
+body {
+    background-image: url("../image/banner/fbeb1df2-2b76-430f-82ac-4a28cf059508.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.sun {
+
+    background-color: yellow;
+    border-radius: 50%;
+    height: 20vh;
+    aspect-ratio: 1 / 1;
+
+    animation: 4s linear 0s infinite alternate animating-multiple-properties;
+}
+
+@keyframes animating-multiple-properties {
+    from {
+        transform: translateY(110vh);
+        background-color: red;
+        filter: brightness(75%);
+    }
+
+    to {
+        transform: translateY(0);
+        background-color: orange;
+
+    }
+}
