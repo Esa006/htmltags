@@ -117,6 +117,7 @@ h2,
 div,
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  src: url("../font/SegoeUIVF.ttf");
   color: teal;
   font-weight: normal;
 }
